@@ -1,10 +1,14 @@
-# 🌐 Welcome to **RAGnostic**  
+# 🪜 Welcome to **RAGnostic**  
 **A simple, out-of-the-box, file-type-agnostic Retrieval-Augmented Generation (RAG) solution written in Python.**
 
 ---
 
 ## 🚀 Overview  
 RAGnostic is designed to seamlessly handle user-uploaded documents, creating an effective retrieval-based knowledge base for AI-powered chatbots. Its file-type agnostic approach ensures compatibility with various document formats, making it highly adaptable for diverse use cases.
+
+---
+
+![RAGnostic Pipeline](./public/ragnostic-pipeline.png "RAGnostic Pipeline")
 
 ---
 
@@ -20,7 +24,8 @@ RAGnostic is designed to seamlessly handle user-uploaded documents, creating an 
 RAGnostic is ideal for:  
 1. **AI Chatbots** that require dynamic, document-driven knowledge bases.  
 2. **Searchable Repositories** for diverse file types.  
-3. **Knowledge Management Systems** with efficient document retrieval.  
+3. **Knowledge Management Systems** with efficient document retrieval.
+4. **Reccomendation Algorithms** to link users with similar documents.
 
 ---
 
@@ -29,7 +34,3 @@ RAGnostic is ideal for:
 1. **Formatted Document Viewer**: Display uploaded documents in Markdown for an interactive, user-friendly experience.  
 2. **Version History & Editing**: Enable users to modify original documents in Markdown, while ensuring updated embeddings are generated to maintain retrieval accuracy.  
 3. **Visual Document Preview**: Offer users a JPEG preview of the original uploaded document for quick reference.  
-
----
-
-## 📂 Folder Structure  
