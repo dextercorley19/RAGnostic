@@ -17,7 +17,7 @@ RAGnostic is designed to seamlessly handle user-uploaded documents, creating an 
 - **Python**: Core language for development, managed with **Poetry**.  
 - **AWS S3**: Scalable storage solution for user-uploaded documents.  
 - **Pinecone DB**: High-performance vector database for managing embeddings.  
-- **OpenAI**: State-of-the-art language models for enhanced query responses.  
+- **OpenAI**: Easy to use language models for enhanced query responses.
 
 ---
 
