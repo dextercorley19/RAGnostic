@@ -1,0 +1,21 @@
+[project]
+name = "poetry-ragnostic"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Dexter Corley",email = "dexter.corley@live.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "openai (>=1.59.7,<2.0.0)",
+    "pdf2image (>=1.17.0,<2.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "boto3 (>=1.35.99,<2.0.0)",
+    "pinecone (>=5.4.2,<6.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
