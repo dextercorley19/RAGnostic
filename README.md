@@ -1,11 +1,7 @@
 # 🪜 Welcome to **RAGnostic**  
 **A simple, out-of-the-box, file-type-agnostic Retrieval-Augmented Generation (RAG) solution written in Python.**
 
-- [Overview](https://github.com/dextercorley19/RAGnostic?tab=readme-ov-file#-overview)
-- [Tech Stack](https://github.com/dextercorley19/RAGnostic?tab=readme-ov-file#-tech-stack)
-- [Use Case](https://github.com/dextercorley19/RAGnostic?tab=readme-ov-file#-tech-stack)
-- [Future Opportunities](https://github.com/dextercorley19/RAGnostic?tab=readme-ov-file#-tech-stack)
-
+- [Get Started](https://github.com/dextercorley19/RAGnostic?tab=readme-ov-file#-get-started)
 ---
 
 ## 🚀 Overview  
