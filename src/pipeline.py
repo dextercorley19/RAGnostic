@@ -22,8 +22,9 @@ s3 = boto3.client('s3')
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
-
+# --------------------------------
 # --- Step 1: Get the document ---
+# --------------------------------
 # Output:
 # Document containing "CHUNK_HERE" and document with that removed
 
@@ -49,7 +50,9 @@ document = open("example.txt").read()
 markdown_content_to_chunk = document
 markdown_content = remove_chunk_marker(document)
 
+# ----------------------------
 # --- Step 2: AWS S3 Setup ---
+# ----------------------------
 
 def upload_to_s3(document_name, content, user_id):
     """Upload a Markdown file to S3 using a combination of user_id, timestamp, and file name."""
