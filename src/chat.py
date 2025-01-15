@@ -42,6 +42,27 @@ def retrieve_context(query: str, top_k: int = 10) -> str:
         include_metadata=True
     )
     return [match['metadata']['chunk_content'] for match in query_result['matches']]
+    # IF you are using S3 to store chunk content, not pinecone    
+    #     user_id = int(match['metadata']['user_id'])
+    #     chunk_index = int(match['metadata']['chunk_index'])
+    #     document_id = match['metadata']['document_id']
+        
+    #     chunk_id = f"{document_id}_chunk_{chunk_index}"
+    #     s3_key = f"{user_id}/{chunk_id}.txt"
+    #     print(s3_key)
+        
+    #     presigned_url = generate_presigned_url('nord-prod-documents', s3_key)
+    #     # Download the file using the presigned URL
+    #     response = requests.get(presigned_url)
+    #     if response.status_code == 200:
+    #         print(f"Successfully retrieved content from S3 for chunk: {chunk_id}")
+    #         chunks_content.append(response.text)
+    #     else:
+    #         print(f"Failed to retrieve content (Status: {response.status_code})")
+        
+        
+    # print(f"Retrieved {len(chunks_content)} chunks of content from S3.")
+    # return chunks_content
 
 def chat_with_gpt(query: str) -> str:
     """Send the query to ChatGPT along with context and memory."""
@@ -60,7 +81,7 @@ def chat_with_gpt(query: str) -> str:
     }
     
     messages = [system_message] + history + [{"role": "user", "content": query}]
-    
+        
     response = client.chat.completions.create(
         model="gpt-3.5-turbo", # could use a newer model, but I've found that 3.5 works well with RAG and is much cheaper
         messages=messages
