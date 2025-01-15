@@ -48,7 +48,7 @@ Cons:
 ---
 
 ## 👾 Get Started
-### **Intro too RAGnostic and how to get started**  
+### **How to get started**  
 Prerequisites:
 - [Poetry installation](https://python-poetry.org/docs/#installation)
 - [Pinecone Account](https://www.pinecone.io) with an index setup for to input 1536 dimensional embeddings.
